@@ -1,20 +1,22 @@
 #include "Person.h"
 #include <iostream>
+using std::cout;
+using std::endl;
 
 Person::Person(std::string first, std::string last, int arbitrary)
     : firstname(first), lastname(last), arbitraryNumber(arbitrary)
 {
-  std::cout << "constructing " << firstname << " " << lastname << std::endl;
+  cout << "constructing " << firstname << " " << lastname << endl;
 }
 
 Person::Person() : arbitraryNumber(0)
 {
-  std::cout << "constructing " << firstname << " " << lastname << std::endl;
+  cout << "constructing " << firstname << " " << lastname << endl;
 }
 
 Person::~Person()
 {
-  std::cout << "destructing " << firstname << " " << lastname << std::endl;
+  cout << "destructing " << firstname << " " << lastname << endl;
 }
 
 std::string Person::getName()

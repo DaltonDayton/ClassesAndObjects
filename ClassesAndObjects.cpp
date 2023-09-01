@@ -1,5 +1,8 @@
 #include "Person.h"
 #include <iostream>
+using std::cout;
+using std::endl;
+using std::string;
 
 int main()
 {
@@ -7,8 +10,8 @@ int main()
   {
     Person p2;
   }
-  std::cout << "after innermost block" << std::endl;
-  std::string name = p1.getName();
+  cout << "after innermost block" << endl;
+  string name = p1.getName();
 
   // int i = p1.arbitraryNumber;
 
