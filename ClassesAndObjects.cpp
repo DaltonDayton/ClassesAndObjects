@@ -1,3 +1,4 @@
+#include "status.h"
 #include "Tweeter.h"
 #include <iostream>
 using std::cout;
@@ -15,6 +16,14 @@ int main()
   string name = p1.getName();
 
   // int i = p1.arbitraryNumber;
+
+  Status s = Pending;
+  s = Approved;
+
+  FileError fe = FileError::notfound;
+  fe = FileError::ok;
+  NetworkError ne = NetworkError::disconnected;
+  ne = NetworkError::ok;
 
   return 0;
 }
