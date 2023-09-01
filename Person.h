@@ -3,10 +3,12 @@
 class Person
 {
 private:
-  std::string firstName;
-  std::string lastName;
+  std::string firstname;
+  std::string lastname;
   int arbitraryNumber;
 
 public:
+  Person(std::string first, std::string last, int arbitrary);
+  Person() = default;
   std::string getName();
 };

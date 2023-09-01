@@ -1,14 +1,11 @@
 #include "Person.h"
 
-std::string Person::getName()
+Person::Person(std::string first, std::string last, int arbitrary)
+    : firstname(first), lastname(last), arbitraryNumber(arbitrary)
 {
-  return firstName + " " + lastName;
 }
 
-// int main()
-// {
-//   // Person p1 = new Person();
-//   // p1.getName();
-
-//   return 0;
-// };
+std::string Person::getName()
+{
+  return firstname + " " + lastname;
+}
